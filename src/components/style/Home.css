@@ -1,0 +1,66 @@
+/* Global styles */
+:root {
+  --margin-negative: -14px;
+}
+
+/* Main section - Home */
+.home {
+  margin-top: var(--margin-negative);
+}
+
+/* Background image */
+.bgimg {
+  margin-top: 0;
+  max-width: 100%;
+  height: 100%;
+}
+
+/* Heading styles */
+.head {
+  text-align: center;
+  font-size: 50px;
+}
+
+/* Card container */
+.card {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Add box-shadow or border for better visual presentation */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  /* Add padding to create some space between content and card edges */
+  padding: 16px;
+}
+
+/* Card image */
+.cardImg {
+  width: 70%;
+  /* To center the image within the card, set margin to auto on the left and right sides */
+  margin: 0 auto;
+  /* Add a border radius to make the image more visually appealing */
+  border-radius: 50%;
+  /* If you want to limit the height of the image, you can set a max-height */
+  max-height: 150px;
+}
+
+/* Additional styles for responsiveness (adjust as needed) */
+@media screen and (max-width: 768px) {
+  .card {
+    /* For smaller screens, adjust the card size accordingly */
+    height: 200px;
+    width: 200px;
+  }
+
+  .head {
+    font-size: 36px;
+  }
+
+  .cardImg {
+    /* Adjust image size for smaller screens */
+    width: 60%;
+    max-height: 120px;
+  }
+}
